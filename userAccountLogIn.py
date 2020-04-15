@@ -8,7 +8,7 @@ for each_user in iam_con_re.users.all():
 
 # now going to use a profile
 print("\n")
-print (" now using saad profile")
+print (" now using saad profile so we do need to use the console session")
 print("\n")
 
 aws_mag_con_root = boto3.session.Session(profile_name="SaadLearningPython") # first just create session first.
