@@ -1,5 +1,5 @@
 #session vs client
-
+# first need to import the boto3 lib before start working
 import boto3
 
 aws_mag_con_root = boto3.session.Session(profile_name="root") # first just create session first.
