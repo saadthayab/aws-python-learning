@@ -28,6 +28,12 @@ print("\n here is the output from client")
 for each in iam_con_client.list_users()['Users']:
     print(each['UserName'])
 
+# if we want to use the default profile then we dont need to specfy the 
+#aws_mag_con_root = boto3.session.Session(profile_name="root") # first just create session first.
+# we can use directly the resource 
+iam_con_re=boto3.resource(service_name="iam",region_name="us-east-1")
+
+
 """ 
 # by using the roow profile
 
